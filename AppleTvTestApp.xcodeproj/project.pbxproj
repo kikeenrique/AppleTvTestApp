@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C08AEE20278073F600543AE2 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C08AEE1F278073F600543AE2 /* SDWebImageSwiftUI */; };
 		C0F267FF277A1B270042B8A3 /* AppleTvTestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F267FE277A1B270042B8A3 /* AppleTvTestAppApp.swift */; };
 		C0F26801277A1B270042B8A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F26800277A1B270042B8A3 /* ContentView.swift */; };
 		C0F26803277A1B270042B8A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0F26802277A1B270042B8A3 /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C08AEE20278073F600543AE2 /* SDWebImageSwiftUI in Frameworks */,
 				C0F2682A277A1B970042B8A3 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +149,7 @@
 			name = AppleTvTestApp;
 			packageProductDependencies = (
 				C0F26829277A1B970042B8A3 /* SDWebImage */,
+				C08AEE1F278073F600543AE2 /* SDWebImageSwiftUI */,
 			);
 			productName = AppleTvTestApp;
 			productReference = C0F267FB277A1B270042B8A3 /* AppleTvTestApp.app */;
@@ -222,6 +225,7 @@
 			mainGroup = C0F267F2277A1B270042B8A3;
 			packageReferences = (
 				C0F26828277A1B970042B8A3 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				C08AEE1E278073F600543AE2 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = C0F267FC277A1B270042B8A3 /* Products */;
 			projectDirPath = "";
@@ -589,6 +593,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C08AEE1E278073F600543AE2 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		C0F26828277A1B970042B8A3 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
@@ -600,6 +612,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C08AEE1F278073F600543AE2 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C08AEE1E278073F600543AE2 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
 		C0F26829277A1B970042B8A3 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C0F26828277A1B970042B8A3 /* XCRemoteSwiftPackageReference "SDWebImage" */;

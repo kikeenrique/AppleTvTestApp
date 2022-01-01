@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SDWebImage
+import SDWebImageSwiftUI
 
 struct ContentView: View {
     var body: some View {
