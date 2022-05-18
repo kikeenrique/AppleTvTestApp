@@ -10,6 +10,9 @@
 		C08AEE20278073F600543AE2 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C08AEE1F278073F600543AE2 /* SDWebImageSwiftUI */; };
 		C08AEE232780CF4100543AE2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C08AEE222780CF4100543AE2 /* Alamofire */; };
 		C08AEE262780CF7C00543AE2 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = C08AEE252780CF7C00543AE2 /* PromiseKit */; };
+		C0BCF2272833C6B80047D061 /* ExpandableLabel in Frameworks */ = {isa = PBXBuildFile; productRef = C0BCF2262833C6B80047D061 /* ExpandableLabel */; };
+		C0BCF22A28345A4D0047D061 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C0BCF22928345A4D0047D061 /* FirebaseAnalytics */; };
+		C0BCF22C28345A4D0047D061 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = C0BCF22B28345A4D0047D061 /* FirebaseCrashlytics */; };
 		C0F267FF277A1B270042B8A3 /* AppleTvTestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F267FE277A1B270042B8A3 /* AppleTvTestAppApp.swift */; };
 		C0F26801277A1B270042B8A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F26800277A1B270042B8A3 /* ContentView.swift */; };
 		C0F26803277A1B270042B8A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0F26802277A1B270042B8A3 /* Assets.xcassets */; };
@@ -55,7 +58,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0BCF2272833C6B80047D061 /* ExpandableLabel in Frameworks */,
 				C08AEE232780CF4100543AE2 /* Alamofire in Frameworks */,
+				C0BCF22A28345A4D0047D061 /* FirebaseAnalytics in Frameworks */,
+				C0BCF22C28345A4D0047D061 /* FirebaseCrashlytics in Frameworks */,
 				C08AEE262780CF7C00543AE2 /* PromiseKit in Frameworks */,
 				C08AEE20278073F600543AE2 /* SDWebImageSwiftUI in Frameworks */,
 				C0F2682A277A1B970042B8A3 /* SDWebImage in Frameworks */,
@@ -156,6 +162,9 @@
 				C08AEE1F278073F600543AE2 /* SDWebImageSwiftUI */,
 				C08AEE222780CF4100543AE2 /* Alamofire */,
 				C08AEE252780CF7C00543AE2 /* PromiseKit */,
+				C0BCF2262833C6B80047D061 /* ExpandableLabel */,
+				C0BCF22928345A4D0047D061 /* FirebaseAnalytics */,
+				C0BCF22B28345A4D0047D061 /* FirebaseCrashlytics */,
 			);
 			productName = AppleTvTestApp;
 			productReference = C0F267FB277A1B270042B8A3 /* AppleTvTestApp.app */;
@@ -234,6 +243,8 @@
 				C08AEE1E278073F600543AE2 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				C08AEE212780CF4100543AE2 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				C08AEE242780CF7C00543AE2 /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				C0BCF2252833C6B80047D061 /* XCRemoteSwiftPackageReference "ExpandableLabel" */,
+				C0BCF22828345A4D0047D061 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = C0F267FC277A1B270042B8A3 /* Products */;
 			projectDirPath = "";
@@ -625,6 +636,22 @@
 				minimumVersion = 6.0.0;
 			};
 		};
+		C0BCF2252833C6B80047D061 /* XCRemoteSwiftPackageReference "ExpandableLabel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kikeenrique/ExpandableLabel";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.0;
+			};
+		};
+		C0BCF22828345A4D0047D061 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 		C0F26828277A1B970042B8A3 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
@@ -650,6 +677,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C08AEE242780CF7C00543AE2 /* XCRemoteSwiftPackageReference "PromiseKit" */;
 			productName = PromiseKit;
+		};
+		C0BCF2262833C6B80047D061 /* ExpandableLabel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0BCF2252833C6B80047D061 /* XCRemoteSwiftPackageReference "ExpandableLabel" */;
+			productName = ExpandableLabel;
+		};
+		C0BCF22928345A4D0047D061 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0BCF22828345A4D0047D061 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		C0BCF22B28345A4D0047D061 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0BCF22828345A4D0047D061 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
 		};
 		C0F26829277A1B970042B8A3 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
